@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+$left-color:  #0e5f7d;
+$right-color: #013516;
+
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html, body { 
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  font-size: 1.5em;
+  background: linear-gradient(
+    135deg,
+    rgba($left-color, 50),
+    rgba($right-color, 50)
+  );
+}
+.loader{
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+}
